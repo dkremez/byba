@@ -1,4 +1,4 @@
-module Ryba
+module Byba
   def self.numerify(number_string)
     number_string.gsub('#') { rand(10).to_s }
   end
@@ -37,8 +37,8 @@ module Ryba
   end
 end
 
-require 'ryba/data'
-require 'ryba/name'
-require 'ryba/phone_number'
-require 'ryba/address'
-require 'ryba/company'
+require 'byba/data'
+require 'byba/name'
+require 'byba/phone_number'
+require 'byba/address'
+require 'byba/company'

@@ -1,9 +1,9 @@
 # encoding: utf-8
-module Ryba
+module Byba
   class Address
     class<<self
       def index
-        Ryba.pick(100000...700000)
+        Ryba.pick(200000...299999)
       end
 
       def city
@@ -11,10 +11,10 @@ module Ryba
       end
 
       def full_city
-        cty = Ryba.pick(Data::AllCities)
+        cty = Byba.pick(Data::ByCities)
         h_cty = cty.gsub('_', ' ')
 
-        region = Ryba.pick(Data::RegionByCities[cty])
+        region = Byba.pick(Data::RegionByCities[cty])
 
         if Data::CitiesByRegion[region].first == cty
           "г. #{h_cty}"
@@ -24,7 +24,7 @@ module Ryba
       end
 
       def street
-        Ryba.pick(Data::StreetNames)
+        Byba.pick(Data::StreetNames)
       end
 
       BuildingFormats = [

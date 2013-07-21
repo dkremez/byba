@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "Ryba" do
+describe "Byba" do
   describe "Name" do
     before :all do
-      @name = Ryba::Name
+      @name = Byba::Name
     end
 
     it "should work for male" do
@@ -32,7 +32,7 @@ describe "Ryba" do
 
   describe "PhoneNumber" do
     before :all do
-      @pn = Ryba::PhoneNumber
+      @pn = Byba::PhoneNumber
     end
 
     it "should work" do
@@ -44,7 +44,7 @@ describe "Ryba" do
 
   describe "Address" do
     before :all do
-      @adr = Ryba::Address
+      @adr = Byba::Address
     end
 
     it "#index should be integer" do
@@ -67,14 +67,14 @@ describe "Ryba" do
   describe "Company" do
     it "#name should work" do
       20.times do
-        n = Ryba::Company.name
+        n = Byba::Company.name
         n.should_not be_empty
       end
     end
 
     it "#name with options should work" do
       20.times do
-        n = Ryba::Company.name(:solidity => 3)
+        n = Byba::Company.name(:solidity => 3)
         n.should_not be_empty
       end
     end
