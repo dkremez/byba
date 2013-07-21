@@ -3,14 +3,14 @@ $:.push File.expand_path("../lib", __FILE__)
 require "ryba/version"
 
 Gem::Specification.new do |s|
-  s.name        = "ryba"
+  s.name        = "byba"
   s.version     = Ryba::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["oleg dashevskii"]
   s.email       = %q{olegdashevskii@gmail.com}
   s.homepage    = "http://github.com/be9/ryba"
-  s.summary     = %q{Russian faker}
-  s.description = %q{Russian names and addresses generator}
+  s.summary     = %q{Bellarusian faker}
+  s.description = %q{Bellarusian names and addresses generator}
 
   s.rubyforge_project = "ryba"
 
